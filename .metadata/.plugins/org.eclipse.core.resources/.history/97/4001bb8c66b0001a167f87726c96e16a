@@ -1,0 +1,33 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Testcase2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//selenium-code
+		
+				//Create first Driver object - this driver is specific to each and every browser.
+				//FIREFOX BROWSER
+				//We will strictly implement methods of webdriver
+				
+				/* Class Name = ChromeDriver,
+
+				 * X driver = new X();*/
+				
+				//gecko driver
+				System.setProperty("webdriver.gecko.driver", "C:\\work\\geckodriver.exe");
+				WebDriver driver=new FirefoxDriver();
+				driver.get("http://shopsm.com"); //hit url of google chrome
+				System.out.println(driver.getTitle());
+				
+	}
+
+}
+
+
+
+
+
+
+
